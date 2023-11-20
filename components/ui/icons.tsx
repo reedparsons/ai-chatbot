@@ -1,9 +1,10 @@
 'use client'
-
+import googleIcon from '../../public/Glogo.svg'
+import nestIcon from '../../public/nestSmall.svg'
 import * as React from 'react'
 
 import { cn } from '@/lib/utils'
-
+import Image from 'next/image'
 function IconNextChat({
   className,
   inverted,
@@ -136,6 +137,36 @@ function IconGitHub({ className, ...props }: React.ComponentProps<'svg'>) {
     </svg>
   )
 }
+
+
+function IconGoogle({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <>
+      <div>
+        <title>Google</title>
+        <Image src={googleIcon}  className="mr-2" alt="googleicon"/>
+      </div>
+    </>
+  )
+}
+
+function IconNest({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <>
+      <div>
+        <title>NesTec AI</title>
+        <Image
+          src={nestIcon}
+          className="mr-2"
+          alt="nest Icon"
+          style={{ height: 53, width: 36 }}
+        />
+      </div>
+    </>
+  )
+}
+
+
 
 function IconSeparator({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
@@ -482,6 +513,8 @@ export {
   IconOpenAI,
   IconVercel,
   IconGitHub,
+  IconGoogle,
+  IconNest,
   IconSeparator,
   IconArrowDown,
   IconArrowRight,
