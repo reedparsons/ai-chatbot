@@ -14,8 +14,9 @@
     "format:check": "prettier --check \"{app,lib,components}**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
-    "@radix-ui/react-alert-dialog": "^1.0.4",
-    "@radix-ui/react-dialog": "^1.0.4",
+    "@aws-amplify/cli": "^12.8.2",
+    "@radix-ui/react-alert-dialog": "1.0.4",
+    "@radix-ui/react-dialog": "1.0.4",
     "@radix-ui/react-dropdown-menu": "^2.0.5",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-select": "^1.2.2",
@@ -29,6 +30,7 @@
     "ai": "^2.1.6",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
+    "csstype": "^3.0.10",
     "focus-trap-react": "^10.1.1",
     "nanoid": "^4.0.2",
     "next": "13.4.7-canary.1",
@@ -36,6 +38,7 @@
     "next-images": "^1.8.5",
     "next-themes": "^0.2.1",
     "openai-edge": "^0.5.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
@@ -45,6 +48,9 @@
     "react-textarea-autosize": "^8.4.1",
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1",
+    "solid-js": "^1.2",
+    "svelte": "^4.0.0",
+    "vue": "^3.3.8",
     "webpack": "^5.89.0"
   },
   "devDependencies": {
