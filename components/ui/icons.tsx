@@ -1,6 +1,6 @@
 'use client'
 import googleIcon from '../../public/Glogo.svg'
-import nestIcon from '../../public/nestSmall.svg'
+import nestIcon from '../../public/NestLogo.svg'
 import * as React from 'react'
 
 import { cn } from '@/lib/utils'
@@ -159,7 +159,7 @@ function IconNest({ className, ...props }: React.ComponentProps<'svg'>) {
           src={nestIcon}
           className="mr-2"
           alt="nest Icon"
-          style={{ height: 53, width: 36 }}
+          style={{ height: 100, width: 100 }}
         />
       </div>
     </>

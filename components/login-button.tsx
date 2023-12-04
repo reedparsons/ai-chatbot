@@ -6,7 +6,7 @@ import { signIn } from 'next-auth/react'
 import { cn } from '@/lib/utils'
 import { Button, type ButtonProps } from '@/components/ui/button'
 import { IconGitHub, IconSpinner, IconGoogle } from '@/components/ui/icons'
-
+import GoogleProvider from 'next-auth/providers/google'
 interface LoginButtonProps extends ButtonProps {
   showGithubIcon?: boolean
   text?: string
@@ -59,7 +59,7 @@ export function GooLoginButton({
       onClick={() => {
         setIsLoading(true)
         // next-auth signIn() function doesn't work yet at Edge Runtime due to usage of BroadcastChannel
-        signIn('github', { callbackUrl: `/` })
+        signIn('google', { callbackUrl: `/` })
       }}
       disabled={isLoading}
       className={cn(className)}
