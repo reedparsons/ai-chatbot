@@ -6,8 +6,7 @@ module.exports = {
   },
   env: {
     OPENAI_API_KEY: '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',
-    GOOGLE_CLIENT_ID:
-      '833345774603-3pondr11uqoj3rfhv9nh0m31hitqivlk.apps.googleusercontent.com',
+    GOOGLE_CLIENT_ID: '833345774603-3pondr11uqoj3rfhv9nh0m31hitqivlk.apps.googleusercontent.com',
     GOOGLE_CLIENT_SECRET: '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',
     NEXTAUTH_URL: 'http://localhost:3000',
     NEXTAUTH_SECRET: 'YEfFAYPE7HljOU4aXarP7gsc/FQJWJnH/XwnemuN7e0=',
