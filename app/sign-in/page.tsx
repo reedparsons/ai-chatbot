@@ -8,6 +8,7 @@ export default async function SignInPage() {
   // redirect to home if user is already logged in
   if (session?.user) {
     redirect('/')
+    
   }
   return (
     <>

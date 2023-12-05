@@ -2,8 +2,11 @@ import React from 'react'
 
 import { cn } from '@/lib/utils'
 import { ExternalLink } from '@/components/external-link'
+import { useSession, signIn, signOut } from 'next-auth/react'
 
 export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
+
+  
   return (
     <p
       className={cn(

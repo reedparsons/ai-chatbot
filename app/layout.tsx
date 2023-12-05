@@ -3,6 +3,14 @@ import { Toaster } from 'react-hot-toast'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 
+import '../styles/globals.css'
+import type { AppProps } from 'next/app'
+'use client'
+import { SessionProvider } from 'next-auth/react'
+
+
+import { FooterText } from '@/components/footer'
+
 
 import '../styles/globals.css'
 import { fontMono, fontSans } from '@/lib/fonts'
@@ -36,9 +44,15 @@ export const metadata = {
 interface RootLayoutProps {
   children: React.ReactNode
 }
+import   NextAuthProvider from '@/components/provider';
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({
+  children }: RootLayoutProps ) {
+
+
+  
   return (
+    <>
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
@@ -46,7 +60,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           GeistSans.variable,
           GeistMono.variable
         )}
-      >
+        >
+        <NextAuthProvider> 
         <Toaster />
         <Providers
           attribute="class"
@@ -60,8 +75,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <main className="flex flex-col flex-1 bg-muted/50">{children}</main>
           </div>
           <TailwindIndicator />
-        </Providers>
+            </Providers>
+            </NextAuthProvider>
       </body>
-    </html>
+      </html>
+      </>
   )
 }
