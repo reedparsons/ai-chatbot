@@ -4,10 +4,11 @@ module.exports = {
   experimental: {},
   env: {
     OPENAI_API_KEY: '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',
-    GOOGLE_CLIENT_ID:'833345774603-3pondr11uqoj3rfhv9nh0m31hitqivlk.apps.googleusercontent.com',
+    GOOGLE_CLIENT_ID:
+      '833345774603-3pondr11uqoj3rfhv9nh0m31hitqivlk.apps.googleusercontent.com',
     GOOGLE_CLIENT_SECRET: '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',
     GOOGLE_API_KEY: 'AIzaSyC0jcq6RW0WNuyE3jTmSx-b-4g7DUR9F7c',
-    NEXTAUTH_URL: 'http://localhost:3000',
+    NEXTAUTH_URL: 'http://ai-chatbot-nik-og.vercel.app/',
     NEXTAUTH_SECRET: 'YEfFAYPE7HljOU4aXarP7gsc/FQJWJnH/XwnemuN7e0=',
     AUTH_GITHUB_ID: '1dc8455c3b242540fe13',
     AUTH_GITHUB_SECRET: '80684574f046e1c000522d5636b38692e686828f',
@@ -35,7 +36,6 @@ module.exports = {
         port: '',
         pathname: '**'
       }
-    ],
-   
+    ]
   }
 }
