@@ -9,6 +9,7 @@
   "plugins": ["tailwindcss"],
   "rules": {
     "tailwindcss/no-custom-classname": "off"
+    
   },
   "settings": {
     "tailwindcss": {

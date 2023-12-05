@@ -1,5 +1,6 @@
-import { auth } from '@/pages/api/auth/auth'
-import { LoginButton, GooLoginButton } from '@/components/login-button'
+import { auth } from '@/auth'
+import { LoginButton } from '@/components/login-button'
+import {GooLoginButton}  from '@/components/google-login-button'
 import { redirect } from 'next/navigation'
 
 export default async function SignInPage() {
@@ -16,7 +17,7 @@ export default async function SignInPage() {
             <LoginButton />
           </div>
           <div className="my-2 w-auto">
-            <GooLoginButton />
+             <GooLoginButton /> 
           </div>
         </div>
       </div>
