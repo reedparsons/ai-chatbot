@@ -34,12 +34,12 @@ async function UserOrLogin() {
         </>
       ) : (
         <Link href="/" target="_blank" rel="nofollow">
-          <IconNest className="w-6 h-6 mr-2 dark:hidden"  />
+          <IconNest className="mr-2 h-6 w-6 dark:hidden"  />
          
         </Link>
       )}
       <div className="flex items-center">
-        <IconSeparator className="w-6 h-6 text-muted-foreground/50" />
+        <IconSeparator className="h-6 w-6 text-muted-foreground/50" />
         {session?.user ? (
           <UserMenu user={session.user} />
         ) : (
@@ -54,7 +54,7 @@ async function UserOrLogin() {
 
 export  function Header() {
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between w-full h-16 px-4 border-b shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 flex h-16 w-full shrink-0 items-center justify-between border-b bg-gradient-to-b from-background/10 via-background/50 to-background/80 px-4 backdrop-blur-xl">
       <div className="flex items-center">
         <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
           <UserOrLogin />
@@ -76,4 +76,3 @@ export  function Header() {
   )
 }
 
-export default {Header}

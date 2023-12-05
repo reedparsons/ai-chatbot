@@ -13,8 +13,8 @@ interface ChatHistoryProps {
 
 export async function ChatHistory({ userId }: ChatHistoryProps) {
   return (
-    <div className="flex flex-col h-full">
-      <div className="px-2 my-4">
+    <div className="flex h-full flex-col">
+      <div className="my-4 px-2">
         <Link
           href="/"
           className={cn(
@@ -28,11 +28,11 @@ export async function ChatHistory({ userId }: ChatHistoryProps) {
       </div>
       <React.Suspense
         fallback={
-          <div className="flex flex-col flex-1 px-4 space-y-4 overflow-auto">
+          <div className="flex flex-1 flex-col space-y-4 overflow-auto px-4">
             {Array.from({ length: 10 }).map((_, i) => (
               <div
                 key={i}
-                className="w-full h-6 rounded-md shrink-0 animate-pulse bg-zinc-200 dark:bg-zinc-800"
+                className="h-6 w-full shrink-0 animate-pulse rounded-md bg-zinc-200 dark:bg-zinc-800"
               />
             ))}
           </div>
