@@ -4,15 +4,12 @@ yarn add v1.22.21
 [3/4] Linking dependencies...
 [4/4] Building fresh packages...
 success Saved lockfile.
-success Saved 7 new dependencies.
+success Saved 3 new dependencies.
 info Direct dependencies
-└─ vue@3.3.8
+├─ solid-js@1.8.7
+└─ vue@3.3.10
 info All dependencies
-├─ @vue/compiler-sfc@3.3.8
-├─ @vue/reactivity-transform@3.3.8
-├─ @vue/reactivity@3.3.8
-├─ @vue/runtime-core@3.3.8
-├─ @vue/runtime-dom@3.3.8
-├─ @vue/server-renderer@3.3.8
-└─ vue@3.3.8
-Done in 8.69s.
+├─ seroval@0.15.1
+├─ solid-js@1.8.7
+└─ vue@3.3.10
+Done in 4.60s.
