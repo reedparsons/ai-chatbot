@@ -1,4 +1,4 @@
-'use client'
+
 import { Metadata } from 'next'
 import { Toaster } from 'react-hot-toast'
 import { GeistSans } from 'geist/font/sans'
