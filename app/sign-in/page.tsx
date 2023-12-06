@@ -18,7 +18,7 @@ export default async function SignInPage() {
             <LoginButton />
           </div>
           <div className="my-2 w-auto">
-             <GooLoginButton /> 
+             {/* <GooLoginButton />  */}
           </div>
         </div>
       </div>
