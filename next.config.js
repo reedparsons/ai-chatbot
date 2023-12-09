@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  
   reactStrictMode: true,
   experimental: {},
   env: {
-    OPENAI_API_KEY: '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',
+    OPENAI_API_KEY: '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',
     GOOGLE_CLIENT_ID:
       '833345774603-3pondr11uqoj3rfhv9nh0m31hitqivlk.apps.googleusercontent.com',
     GOOGLE_CLIENT_SECRET: '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',

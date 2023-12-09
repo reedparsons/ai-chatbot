@@ -6,16 +6,18 @@ import { auth } from '@/auth'
 import { nanoid } from '@/lib/utils'
 import OpenAI from 'openai'
 export const runtime = 'edge'
+export const dynamic = 'force-dynamic' // defaults to force-static
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 })
 
+
 export async function POST(req: Request) {
   const json = await req.json()
   const { messages, previewToken } = json
   const userId = (await auth())?.user.id
-
+console.log('userid:', userId)
   if (!userId) {
     return new Response('Unauthorized', {
       status: 401

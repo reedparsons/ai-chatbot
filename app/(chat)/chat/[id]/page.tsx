@@ -13,7 +13,6 @@ export interface ChatPageProps {
     id: string
   }
 }
-
 export async function generateMetadata({
   params
 }: ChatPageProps): Promise<Metadata> {
